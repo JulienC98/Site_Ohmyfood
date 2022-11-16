@@ -1,3 +1,139 @@
 /* font-family: 'Roboto', sans-serif;
 font-family: 'Shrikhand', cursive; */
 
+/* RESET CSS + REGLE GENERAL*/
+
+html, body {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+}
+
+h1 {
+    font-family: 'Shrikhand', cursive;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* HEADER */
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+header img {
+    width: 50%;
+    margin: 20px auto;
+}
+
+/* FIN HEADER */
+/* LOCALISATION */
+
+#localisation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #80808050;
+    flex-wrap: wrap;
+}
+
+#localisation p {
+    font-size: 18px;
+}
+
+/* FIN LOCALISATION */
+/* MENU  */
+
+#menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#menu h1 {
+    text-align: center;
+}
+
+/* FIN MENU */
+/* FONCTIONNEMENT */
+
+#container_vignette_fonctionnement {
+    display: flex;
+    flex-direction: column;
+}
+
+.vignettes_fonctionnement {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* FIN FONCTIONNEMENT */
+/* RESTAURANTS */
+
+#container_vignette_restaurants {
+    display: flex;
+    flex-direction: column;
+}
+
+.vignettes_restaurants {
+    width: 90%;
+    margin: 5px auto;
+}
+
+/* FIN RESTAURANTS */
+/* FOOTER */
+
+footer {
+    background-color: #343434;
+    padding: 20px 0 0 0;
+    margin: 20px 0 0 0;
+}
+
+footer h1, footer span, footer p, footer a {
+    color: white;
+}
+
+footer h1 {
+    font-size: 20px;
+    margin: 0 0 20px 40px;
+}
+
+#details {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.details_style {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 5px;
+    padding-left: 30px;
+}
+
+.details_style_solo {
+    margin: 10px;
+    padding-left: 25px;
+}
+
+.details_style_solo p {
+    margin-left: 35px;
+}
+
+.details_style_solo a {
+    text-decoration: none;
+}
+
+/* FIN FOOTER */

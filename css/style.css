@@ -84,11 +84,53 @@ header img {
 #container_vignette_restaurants {
     display: flex;
     flex-direction: column;
+    gap: 20px;
 }
 
 .vignettes_restaurants {
     width: 90%;
+    height: 300px;
     margin: 5px auto;
+}
+
+.vignettes_restaurants img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+}
+
+.nouveau {
+    margin: -200px 0 0 330px;
+    background-color: green;
+    position: absolute;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.vignettes_restaurants a {
+    text-decoration: none;
+    color: black;
+}
+
+.vignettes_restaurants h3 {
+    margin: 5px 0 10px 15px;
+    font-size: 22px;
+}
+
+.emplacement {
+    margin: 0 0 0 15px;
+}
+
+.favoris {
+    float: right;
+    margin: -50px 20px 0 0;
+}
+
+.favoris span {
+    font-size: 30px;
 }
 
 /* FIN RESTAURANTS */

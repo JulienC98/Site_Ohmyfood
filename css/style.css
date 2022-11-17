@@ -104,6 +104,7 @@ header img {
     height: 300px;
     margin: 5px auto;
     border-style: solid;
+    position: relative;
 }
 
 .vignettes_restaurants img {
@@ -116,12 +117,13 @@ header img {
 }
 
 .nouveau {
-    margin: -200px 20px 0 0;
+    margin: 0px 00px 0 0;
     background-color: green;
-    position: relative;
+    position: absolute;
     padding: 8px;
     border-radius: 5px;
-    float: right;
+    top: 15px;
+    right: 15px;
 }
 
 .vignettes_restaurants a {
@@ -193,3 +195,8 @@ footer h1 {
 }
 
 /* FIN FOOTER */
+/* MODELE PAGE RESTAURANT */
+
+
+
+/* FIN MODELE PAGE RESTAURANT */

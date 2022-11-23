@@ -13,37 +13,37 @@
     <link rel="stylesheet" href="css/style.css">
     <title>ohmyfood</title>
 </head>
-<header>
+<header id="page_restaurant">
     <a href="./">
         <span class="material-symbols-outlined">arrow_back</span>
     </a>
-    <img src="img/ohmyfood.png" alt="Logo ohmyfood">
+    <h1>ohmyfood</h1>
 </header>
 
 <body>
-    <div id="restaurants">
+    <div id="page_restaurant_affiche">
         <img src="img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="">
     </div>
-    <section>
+    <section id="page_restaurant_menu">
         <h1>A la française</h1>
         <span class="material-symbols-outlined">favorite</span>
-        <article id="entrees">
+        <article class="container_vignette_choix">
             <h3>ENTREES</h3>
-            <div class="choix_entrees">
+            <div class="vignette_choix">
                 <h2>Tartare de poulpe acidulé</h2>
                 <div class="info_prix">
                     <p class="info">Aux zestes d'orange</p>
                     <p class="prix">25€</p>
                 </div>
             </div>
-            <div class="choix_entrees">
+            <div class="vignette_choix">
                 <h2>Velouté de légumes d'antan</h2>
                 <div class="info_prix">
                     <p class="info">Carotte, panais, topinambour</p>
                     <p class="prix">35€</p>
                 </div>
             </div>
-            <div class="choix_entrees">
+            <div class="vignette_choix">
                 <h2>Soupe à l'oignon</h2>
                 <div class="info_prix">
                     <p class="info">Revisitée</p>
@@ -51,23 +51,23 @@
                 </div>
             </div>
         </article>
-        <article>
+        <article class="container_vignette_choix">
             <h3>PLATS</h3>
-            <div class="choix_plats">
+            <div class="vignette_choix">
                 <h2>Coquilles Saint-Jacques</h2>
                 <div class="info_prix">
                     <p class="info">Accompagnées d'une purée de panais</p>
                     <p class="prix">40€</p>
                 </div>
             </div>
-            <div class="choix_plats">
+            <div class="vignette_choix">
                 <h2>Magret de canard</h2>
                 <div class="info_prix">
                     <p class="info">Et parmentier de pommes de terre</p>
                     <p class="prix">35€</p>
                 </div>
             </div>
-            <div class="choix_plats">
+            <div class="vignette_choix">
                 <h2>Pigeonneau d'Ille-et-Vilaine</h2>
                 <div class="info_prix">
                     <p class="info">Sur son lit de gnocchis aux légumes</p>
@@ -75,23 +75,23 @@
                 </div>
             </div>
         </article>
-        <article>
+        <article class="container_vignette_choix">
             <h3>DESSERTS</h3>
-            <div class="choix_desserts">
+            <div class="vignette_choix">
                 <h2>Pétales de violettes glacés</h2>
                 <div class="info_prix">
                     <p class="info">Et purée de noisettes</p>
                     <p class="prix">18€</p>
                 </div>
             </div>
-            <div class="choix_desserts">
+            <div class="vignette_choix">
                 <h2>Fondant au chocolat</h2>
                 <div class="info_prix">
                     <p class="info">Revisité</p>
                     <p class="prix">22€</p>
                 </div>
             </div>
-            <div class="choix_desserts">
+            <div class="vignette_choix">
                 <h2>Millefeuille croustillant</h2>
                 <div class="info_prix">
                     <p class="info">Myrtilles et pâte d'amande</p>
@@ -99,8 +99,10 @@
                 </div>
             </div>
         </article>
-        <div id="button">
-            <p>Commander</p>
+        <div class="valider_panier">
+            <button>
+                Commander
+            </button>
         </div>
     </section>
 </body>

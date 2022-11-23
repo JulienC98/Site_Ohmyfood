@@ -24,15 +24,11 @@ p {
 
 /* HEADER */
 
-header {
-    display: flex;
-    justify-content: center;
+.titre_header {
+    text-align: center;
+    margin: 10px 0 0px 0;
 }
 
-header img {
-    width: 50%;
-    margin: 20px auto;
-}
 
 /* FIN HEADER */
 /* LOCALISATION */
@@ -58,56 +54,95 @@ header img {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 350px;
+    background-color: rgb(236, 236, 236);
 }
 
 #menu h2 {
     text-align: center;
+    font-size: 28px;
+    margin: 40px 80px 20px 80px;
 }
 
 #menu p {
-    margin: 15px 30px;
+    margin: 10px 10px;
     text-align: center;
     font-size: 20px;
 }
 
+#menu div {
+    margin: 25px;
+}
+
+#menu button {
+    background: linear-gradient(#FF79DA, #9356DC);
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    border: none;
+    border-radius: 26px;
+    height: 50px;
+    width: 100%;
+    padding: 0px 25px;
+    color: white;
+}
 /* FIN MENU */
 /* FONCTIONNEMENT */
 #fonctionnement {
-    margin: 10px 25px;
+    margin: 40px auto;
 }
+
+#fonctionnement h2 {
+    margin: 15px 0 15px 25px;
+}
+
 #container_vignette_fonctionnement {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 25px;
+    margin: auto 15px;
 }
 
 .vignettes_fonctionnement {
     display: flex;
     flex-direction: row;
     align-items: center;
-    border: solid black;
-    width: 80%;
+    border: none;
+    width: 90%;
     height: 80px;
     border-radius: 18px;
     position: relative;
     gap: 5px;
+    background-color: rgb(238, 238, 238);
+    box-shadow: 1px 1px 5px 3px #cccccc;
 }
 
 .numero_vignette_fonctionnement {
     position: absolute;
     left: -17px;
-    background-color: red;
+    background-color: #9356DC;
     padding: 5px 10px;
     border-radius: 22px;
+    color: white;
 }
 
 .vignettes_fonctionnement span {
-    margin: 0 0 0 15px;
+    margin: 0 0 0 30px;
+}
+
+.select_option {
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    margin: 0 0 0 20px;
 }
 
 /* FIN FONCTIONNEMENT */
 /* RESTAURANTS */
+
+#restaurants {
+    background-color: rgb(238, 238, 238);
+    padding: 40px 0 60px 0;
+}
 
 #restaurants h2 {
     margin: 15px 0 15px 25px;
@@ -123,8 +158,10 @@ header img {
     width: 90%;
     height: 300px;
     margin: 5px auto;
-    border-style: solid;
+    border-style: none;
+    border-radius: 18px;
     position: relative;
+    box-shadow: 1px 1px 5px 3px #cccccc;
 }
 
 .vignettes_restaurants img {
@@ -138,7 +175,8 @@ header img {
 
 .nouveau {
     margin: 0px 00px 0 0;
-    background-color: green;
+    background-color: #99E2D0;
+    color: #036d54;
     position: absolute;
     padding: 8px;
     border-radius: 5px;
@@ -176,7 +214,6 @@ header img {
 footer {
     background-color: #343434;
     padding: 40px 0 0 0;
-    margin: 40px 0 0 0;
 }
 
 footer h1, footer span, footer p, footer a {
@@ -218,6 +255,110 @@ footer h1 {
 /* FIN FOOTER */
 /* MODELE PAGE RESTAURANT */
 
+#page_restaurant {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 15px;
+}
 
+#page_restaurant h1 {
+    margin: auto;
+}
+
+#page_restaurant_affiche {
+    width: 100%;
+    height: 50%;
+}
+
+#page_restaurant_menu {
+    position: relative;
+    background-color: #fdfdfd;
+    margin-top: -80px;
+    padding: 10px;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+}
+
+#page_restaurant_menu h1 {
+    margin: 25px 0px;
+    font-size: 35px;
+}
+
+#page_restaurant_menu .material-symbols-outlined {
+    position: absolute;
+    right: 40px;
+    top: 45px;
+    font-size: xx-large;
+}
+
+.container_vignette_choix {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.container_vignette_choix h3 {
+    border-bottom: solid;
+    width: 12%;
+    border-color: #99E2D0;
+}
+
+.vignette_choix {
+    width: 95vw;
+    height: 10vh;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 1px 1px 8px 0px #cccccc;
+    display: flex;
+    flex-direction: column;
+}
+
+.vignette_choix h2 {
+    margin: 15px 0 0 15px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+.info_prix {
+    margin: 5px 0px 0 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.info_prix p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+.info {
+    margin: 0 0 0 0;
+}
+
+.prix {
+    margin: 0 30px 0 0px;
+}
+
+p.prix {
+    font-weight: bold;
+}
+
+.valider_panier {
+    margin: 40px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.valider_panier button {
+    background: linear-gradient(#FF79DA, #9356DC);
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    border: none;
+    border-radius: 26px;
+    height: 50px;
+    width: 40%;
+    color: white;
+}
 
 /* FIN MODELE PAGE RESTAURANT */

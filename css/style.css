@@ -462,13 +462,143 @@ footer h1 {
 
 /* BREAKPOINT VERSION TABLETTE & DESKTOP */
 /* DEBUT VERSION TABLETTE */
-@media screen {
+@media screen and (min-width: 481px) { 
+    body {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* DEBUT MODELE ACCUEIL  */
+
+    #menu {
+        height: 280px;
+    }
+
+    #fonctionnement h2 {
+        margin: 30px 0 30px 0;
+        text-align: center;
+        font-size: 34px;
+    }
+
+    .vignettes_fonctionnement {
+        width: 70%;
+    }
+
+    #restaurants h2 {
+        margin: 15px 0 30px 0px;
+        text-align: center;
+        font-size: 34px;
+    }
+
+    #container_vignette_restaurants {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .vignettes_restaurants {
+        width: 48%;
+        height: 280px;
+    }
+
+    footer h1 {
+        font-size: 34px;
+        margin: 0 0 20px 0;
+        text-align: center;
+    }
+
+    #details {
+        flex-direction: row;
+        gap: none;
+        justify-content: space-around;
+    }
+
+    .details_style, .details_style_solo {
+        padding-left: 0px;
+    }
+    /* FIN MODELE ACCUEIL */
+    /* DEBUT MODELE PAGE RESTAURANT */
+
+    #page_restaurant_menu {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .container_titre {
+        justify-content: center;
+        gap: 25px;
+        margin: auto;
+        width: 100%;
+    }
+
+    .container_vignette_choix {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        flex-wrap: wrap;
+        width: 50%;
+        height: auto;
+    }
+
+    .container_vignette_choix h3 {
+        font-size: 24px;
+        width: 16%;
+    }
+
+    .vignette_choix {
+        width: 90%;
+        height: 10vh;
+    }
+
+    .info_plat {
+        margin: 5px 0 0 10px;
+    }
     
+    .info_plat h2 {
+        margin: 10px 0 10px 0px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+    }
+
+    .info_plat p {
+        margin: 0 0 0 0px;
+        font-size: 14px;
+    }
+
+    .info_prix p {
+        margin: 0 0 0 0;
+        font-size: 14px;
+        bottom: 20px;
+    }
+
+    .ajout_plat {
+        width: 24%;
+    }
+
+    .valider_panier {
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+    }
+
+    .valider_panier button {
+        font-size: 22px;
+        height: 60px;
+        width: 80%;
+    }
+
+    /* FIN MODELE PAGE RESTAURANT */
 }
 
 /* FIN VERSION TABLETTE */
 /* DEBUT VERSION DESKTOP */
-@media screen {
+@media screen and (min-width: 1025px) {
+    body {
+        background-color: red;
+    }
     
 }
 

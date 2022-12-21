@@ -26,9 +26,8 @@ p {
 
 .titre_header {
     text-align: center;
-    margin: 10px 0 0px 0;
+    margin: 10px auto;
 }
-
 
 /* FIN HEADER */
 /* LOCALISATION */
@@ -54,27 +53,27 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 350px;
     background-color: rgb(236, 236, 236);
 }
 
-#menu h2 {
+.titre_menu_accueil {
     text-align: center;
     font-size: 28px;
-    margin: 40px 80px 20px 80px;
-    font-family:'Roboto', sans-serif;
+    margin: 40px auto;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
 }
 
 #menu p {
-    margin: 10px 10px;
+    margin: 5px;
     text-align: center;
-    font-size: 20px;
-    font-family:'Roboto', sans-serif;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
     color: #5e5e5e;
 }
 
 #menu div {
-    margin: 25px;
+    margin: 25px auto;
 }
 
 #menu button {
@@ -95,7 +94,12 @@ p {
 }
 
 #fonctionnement h2 {
-    margin: 15px 0 15px 25px;
+    margin: 20px auto;
+    padding-left: 30px;
+    text-align: left;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
 }
 
 #container_vignette_fonctionnement {
@@ -134,9 +138,10 @@ p {
 }
 
 .select_option {
-    font-size: 18px;
+    font-size: 16px;
     font-family: 'Roboto', sans-serif;
-    margin: 0 0 0 20px;
+    font-weight: bold;
+    margin: 0 0 0 0px;
 }
 
 /* FIN FONCTIONNEMENT */
@@ -144,11 +149,15 @@ p {
 
 #restaurants {
     background-color: rgb(238, 238, 238);
-    padding: 40px 0 60px 0;
+    padding: 30px 0 60px 0;
 }
 
 #restaurants h2 {
-    margin: 15px 0 15px 25px;
+    margin: 10px auto;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    padding-left: 20px;
 }
 
 #container_vignette_restaurants {
@@ -193,12 +202,18 @@ p {
 }
 
 .vignettes_restaurants h3 {
-    margin: 5px 0 10px 15px;
+    margin: 5px auto;
+    padding-left: 15px;
+    text-align: left;
     font-size: 22px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .emplacement {
-    margin: 0 0 0 15px;
+    margin: auto;
+    padding-left: 15px;
+    text-align: left;
+    font-size: 16px;
 }
 
 .favoris {
@@ -262,22 +277,28 @@ footer h1 {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 15px;
+    margin: 5px;
 }
 
 #page_restaurant h1 {
     margin: auto;
+    font-size: 28px;
+}
+
+#page_restaurant .material-symbols-outlined {
+    font-size: x-large;
+    color: black;
 }
 
 #page_restaurant_affiche {
     width: 100%;
-    height: 330px;
+    height: 220px;
 }
 
 #page_restaurant_menu {
     position: relative;
     background-color: #fdfdfd;
-    margin-top: -80px;
+    margin-top: -45px;
     padding: 10px;
     border-top-right-radius: 40px;
     border-top-left-radius: 40px;
@@ -286,17 +307,21 @@ footer h1 {
 .container_titre {
     display: flex;
     flex-direction: row;
+    margin: 25px 0 5px 0;
     align-items: center;
-    justify-content: space-around;
+    flex-wrap: nowrap;
 }
 
 .container_titre h1 {
-    margin: 25px 0px;
-    font-size: 35px;
+    margin: 0 0 0 0;
+    font-size: 24px;
+    font-family: 'Shrikhand', cursive;
+    width: 80%;
 }
 
-.material-symbols-outlined {
+.container_titre .material-symbols-outlined {
     font-size: xx-large;
+    width: 20%;
 }
 
 .container_vignette_choix {
@@ -307,8 +332,12 @@ footer h1 {
 
 .container_vignette_choix h3 {
     border-bottom: solid;
-    width: 12%;
+    width: 14%;
     border-color: #99E2D0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    margin: 15px 0px 10px 0px;
+    padding-bottom: 6px;
 }
 
 .vignette_choix {
@@ -320,6 +349,8 @@ footer h1 {
     display: flex;
     flex-direction: row;
     overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
     position: relative;
 }
 
@@ -379,25 +410,35 @@ footer h1 {
 /* FIN STYLE TRANSITION VIGNETTE CHOIX */
 
 .info_plat {
-    margin: 5px 0 0 15px;
+    margin-left: 10px;
+    margin-top: 15px;
+    width: 80%;
 }
 
 .info_plat h2 {
-    margin: 10px 0 10px 10px;
+    margin: 0 0 10px 0;
     font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .info_plat p {
-    margin: 0 0 0 10px;
+    margin: 0px 0 0 0px;
+    font-size: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.info_prix {
+    text-align: right;
+    margin-top: 44px;
+    width: 20%;
 }
 
 .info_prix p {
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    margin: 50px 10px 0 0;
-    position: absolute;
-    right: 25px;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 0 0 0 0;
 }
 
 .vignette_choix button {
@@ -410,9 +451,9 @@ footer h1 {
 }
 
 .ajout_plat {
-    width: 18%;
+    width: 22%;
     height: 100%;
-    transform: translateX(81px);
+    transform: translateX(90px);
     transition-timing-function: ease;
     transition-duration: 1s;
     position: absolute;
@@ -425,21 +466,23 @@ footer h1 {
     transform: rotate(0deg);
 }
 
-.ajout_plat_style:hover {
-    transform: rotate(360deg);
+.vignette_choix:hover > .info_plat {
+    width: 60%;
 }
 
-.vignette_choix:hover > .info_prix p {
-    right: 90px;
+.vignette_choix:hover > .info_prix {
+    text-align: left;
+    margin-left: 5px;
+    width: 40%;
 }
 
 .vignette_choix:hover > .ajout_plat {
     transform: translateX(0px);
 }
 
-/* .ajout_plat:hover > .ajout_plat_style {
+.vignette_choix:hover .ajout_plat_style {
     transform: rotate(360deg);
-} */
+}
 
 .valider_panier {
     margin: 40px auto;
@@ -595,7 +638,7 @@ footer h1 {
 
 /* FIN VERSION TABLETTE */
 /* DEBUT VERSION DESKTOP */
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1023px) {
     body {
         background-color: red;
     }

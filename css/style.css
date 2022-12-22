@@ -87,6 +87,27 @@ p {
     padding: 0px 25px;
     color: white;
 }
+
+#menu div {
+    margin: 40px auto;
+    display: flex;
+    justify-content: center;
+}
+
+#menu div a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+#menu .button {
+    background: linear-gradient(#FF79DA, #9356DC);
+    border-radius: 26px;
+    width: 100%;
+    padding: 15px;
+}
 /* FIN MENU */
 /* FONCTIONNEMENT */
 #fonctionnement {
@@ -312,16 +333,16 @@ footer h1 {
     flex-wrap: nowrap;
 }
 
-.container_titre h1 {
+.container_titre h2 {
     margin: 0 0 0 0;
     font-size: 24px;
     font-family: 'Shrikhand', cursive;
-    width: 80%;
+    width: 92.6%;
 }
 
 .container_titre .material-symbols-outlined {
     font-size: xx-large;
-    width: 20%;
+    width: 7.4%;
 }
 
 .container_vignette_choix {
@@ -431,6 +452,7 @@ footer h1 {
 .info_prix {
     text-align: right;
     margin-top: 44px;
+    margin-right: 15px;
     width: 20%;
 }
 
@@ -473,6 +495,7 @@ footer h1 {
 .vignette_choix:hover > .info_prix {
     text-align: left;
     margin-left: 5px;
+    margin-right: 0px;
     width: 40%;
 }
 
@@ -490,15 +513,19 @@ footer h1 {
     justify-content: center;
 }
 
-.valider_panier button {
-    background: linear-gradient(#FF79DA, #9356DC);
+.valider_panier a {
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
-    border: none;
-    border-radius: 26px;
-    height: 50px;
-    width: 40%;
     color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+.button {
+    background: linear-gradient(#FF79DA, #9356DC);
+    border-radius: 26px;
+    width: 45%;
+    padding: 15px;
 }
 
 /* FIN MODELE PAGE RESTAURANT */
@@ -506,31 +533,30 @@ footer h1 {
 /* BREAKPOINT VERSION TABLETTE & DESKTOP */
 /* DEBUT VERSION TABLETTE */
 @media screen and (min-width: 481px) { 
-    body {
+    html, body {
         width: 100%;
         height: 100%;
     }
 
-    /* DEBUT MODELE ACCUEIL  */
+    /* DEBUT MODELE ACCUEIL TABLETTE */
 
     #menu {
         height: 280px;
     }
 
     #fonctionnement h2 {
-        margin: 30px 0 30px 0;
-        text-align: center;
-        font-size: 34px;
+        font-size: 28px;
     }
 
     .vignettes_fonctionnement {
-        width: 70%;
+        width: 95%;
     }
 
     #restaurants h2 {
-        margin: 15px 0 30px 0px;
+        margin: 10px auto;
         text-align: center;
         font-size: 34px;
+        padding-left: 0px;
     }
 
     #container_vignette_restaurants {
@@ -544,15 +570,20 @@ footer h1 {
         height: 280px;
     }
 
+    .favoris {
+        bottom: 5px;
+        right: 10px;
+    }
+
     footer h1 {
         font-size: 34px;
-        margin: 0 0 20px 0;
+        margin: 10px auto;
         text-align: center;
     }
 
     #details {
         flex-direction: row;
-        gap: none;
+        gap: 0px;
         justify-content: space-around;
     }
 
@@ -571,8 +602,6 @@ footer h1 {
     }
 
     .container_titre {
-        justify-content: center;
-        gap: 25px;
         margin: auto;
         width: 100%;
     }
@@ -597,28 +626,33 @@ footer h1 {
     }
 
     .info_plat {
-        margin: 5px 0 0 10px;
+        width: 70%;
     }
     
     .info_plat h2 {
-        margin: 10px 0 10px 0px;
-        font-family: 'Roboto', sans-serif;
         font-size: 18px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
     }
 
     .info_plat p {
-        margin: 0 0 0 0px;
         font-size: 14px;
+    }
+
+    .info_prix {
+        margin-top: 47px;
+        margin-right: 10px;
+        width: 30%;
     }
 
     .info_prix p {
-        margin: 0 0 0 0;
         font-size: 14px;
-        bottom: 20px;
     }
 
     .ajout_plat {
-        width: 24%;
+        width: 35%;
+        transform: translateX(160px);
     }
 
     .valider_panier {
@@ -633,12 +667,22 @@ footer h1 {
         width: 80%;
     }
 
+    .vignette_choix:hover > .info_plat {
+        width: 45%;
+    }
+
+    .vignette_choix:hover > .info_prix {
+        margin-left: 5px;
+        margin-right: 0px;
+        width: 20%;
+    }
+
     /* FIN MODELE PAGE RESTAURANT */
 }
 
 /* FIN VERSION TABLETTE */
 /* DEBUT VERSION DESKTOP */
-@media screen and (min-width: 1023px) {
+@media screen and (min-width: 1024px) {
     body {
         background-color: red;
     }

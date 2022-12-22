@@ -533,11 +533,13 @@ footer h1 {
 /* BREAKPOINT VERSION TABLETTE & DESKTOP */
 /* DEBUT VERSION TABLETTE */
 @media screen and (min-width: 481px) { 
+    /* RESET REGLES CSS LAPTOP & DESKTOP */
     html, body {
         width: 100%;
         height: 100%;
+        padding: 0;
+        margin: 0;
     }
-
     /* DEBUT MODELE ACCUEIL TABLETTE */
 
     #menu {
@@ -683,10 +685,150 @@ footer h1 {
 /* FIN VERSION TABLETTE */
 /* DEBUT VERSION DESKTOP */
 @media screen and (min-width: 1024px) {
-    body {
-        background-color: red;
+    html, body {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
     }
-    
+
+    /* PAGE ACCUEIL  */
+
+    #fonctionnement {
+        margin: 30px 0px;
+    }
+
+    #fonctionnement h2 {
+        font-size: 30px;
+        text-align: center;
+        padding-left: 0px;
+    }
+
+    #container_vignette_fonctionnement {
+        flex-direction: row;
+        margin: auto 25px;
+    }
+
+    .vignettes_fonctionnement {
+        width: 100%;
+    }
+
+    #restaurants {
+        padding: 0 0 0 0;
+        background-color: #ffffff;
+        margin: 20px 0px;
+    }
+
+    #restaurants h2 {
+        font-size: 30px;
+        margin: 35px auto;
+    }
+
+    #container_vignette_restaurants {
+        flex-wrap: nowrap;
+        gap: 5px;
+    }
+
+    .vignettes_restaurants {
+        width: 50%;
+        height: 400px;
+        margin: 5px 5px;
+    }
+
+    .vignettes_restaurants h3 {
+        padding-left: 10px;
+        font-size: 24px;
+        margin: 15px 0 10px 0;
+    }
+
+    .emplacement {
+        padding-left: 10px;
+        font-size: 18px;
+    }
+
+    .favoris {
+        bottom: 20px;
+    }
+
+    footer {
+        padding: 20px 0 0 0;
+    }
+    /* FIN PAGE ACCUEIL  */
+    /* PAGES RESTAURANTS */
+
+    #page_restaurant h1 {
+        font-size: 34px;
+    }
+
+    #page_restaurant_affiche {
+        display: flex;
+        width: 100%;
+        height: 400px;
+    }
+
+    #page_restaurant_affiche img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    #page_restaurant_menu  {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .container_titre {
+        width: 100%;
+        margin: 5px auto;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .container_titre h2 {
+        width: auto;
+        font-size: 30px;
+    }
+
+    .container_titre .material-symbols-outlined {
+        width: auto;
+    }
+
+    #ergonomie_laptop_desktop_menu {
+        display: flex;
+        width: 100%;
+    }
+
+    .container_vignette_choix {
+        width: 34%;
+        align-content: center;
+    }
+
+    .vignette_choix {
+        width: 95%;
+    }
+
+    .info_plat h2 {
+        font-size: 20px;
+    }
+
+    .info_plat p {
+        font-size: 16px;
+    }
+
+    .info_prix {
+        margin-top: 48px;
+    }
+
+    .info_prix p {
+        font-size: 16px;
+    }
+
+    .ajout_plat {
+        width: 30%;
+        transform: translateX(190px);
+    }
+
+    /* FIN PAGES RESTAURANTS */
 }
 
 /* FIN VERSION DESKTOP */
